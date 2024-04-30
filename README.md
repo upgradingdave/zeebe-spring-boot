@@ -4,4 +4,13 @@
 
 # Simple Camunda Zeebe Spring Boot Project
 
+Configure a non-standard CA certificate: 
+```
+export JAVA_TOOL_OPTIONS="-Djavax.net.ssl.trustStore=keystore.jks -Djavax.net.ssl.trustStorePassword=changeit"
+```
 
+Then run the project: 
+```shell
+mvn clean install
+mvn spring-boot:run
+```
